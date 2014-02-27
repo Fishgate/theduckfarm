@@ -52,7 +52,6 @@ Follow variables are useable :
 				<img title="<?php echo esc_attr($image->alttext) ?>" alt="<?php echo esc_attr($image->alttext) ?>" src="<?php echo nextgen_esc_url($image->thumbnailURL) ?>" <?php echo $image->size ?> />
 				<?php } ?>
 			</a>
-			<span><?php echo $image->caption ?></span>
 		</div>
 	</div>
 	<?php if ( $image->hidden ) continue; ?>
