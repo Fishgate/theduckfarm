@@ -1,0 +1,2 @@
+// change the menu position based on the scroll positon
+window.onscroll=function(){var e=jQuery("#gf_form_toolbar"),t=jQuery("#floatMenu");if(window.XMLHttpRequest&&e.length>0){var n=e.offset().top;document.documentElement.scrollTop>n||self.pageYOffset>n?t.css({position:"fixed",top:"40px"}):t.css({position:"static",top:"40px"})}};
