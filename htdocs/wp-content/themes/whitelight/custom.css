@@ -24,11 +24,14 @@ strong {
     width: 100%;
 }
 .responsive_menu label{
-    font-size: 5em;
+    font-size: 60px;
     margin: 0;
     padding: 0;
     line-height: 0;
     color: #DC862A;
+    position: relative;
+    left: 0;
+    top: 10px;
 }
 .responsive_menu{
     margin: 0 auto;
