@@ -32,7 +32,7 @@ INDEX
 /*----------------------*/
 
 /* Adding padding to left & right of content columns */
-#top, #header, #content, #intro, #footer-widgets, #footer  { padding-left: 20px; padding-right: 20px; }
+#top, #header, #content, #intro, #footer-widgets, #footer  { padding: 20px 0; }
 
 /* Adjust header elements positioning between 768px & 920px */
 @media only screen and (min-width: 768px) and (max-width: 920px) {
@@ -146,9 +146,9 @@ INDEX
 	/* 2. MAIN NAVIGATION DROPDOWN MENUS */
 	h3.nav-toggle { display: none; }
 	#navigation  {
-		float: left;
-		display: block!important;
-		margin-top: -3px;
+		float: none;
+		display: inline-block!important;
+		margin-top: 10px;
 		ul.rss  { margin-left: 10px; }
 		.nav li {
 			a  { .border_radius(3px); }
@@ -229,7 +229,7 @@ INDEX
 	/* 3. CONTAINERS & COLUMNS */
 	#header  {
 		.col-full  { position: relative; }
-		#logo, hgroup  { float: left; margin: 0 3em 0 0; }
+		#logo, hgroup  { margin: 0 3em 0 0; }
 		hgroup  { margin-top: -6px; }
 		.search_main  {
 			float: right; width: 170px; margin-top: -2px;

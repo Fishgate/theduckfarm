@@ -23,7 +23,7 @@ $includes = array(
 				'includes/theme-functions.php', 		// Custom theme functions
 				'includes/theme-actions.php', 			// Theme actions & user defined hooks
 				'includes/theme-comments.php', 			// Custom comments/pingback loop
-				'includes/theme-js.php', 				// Load JavaScript via wp_enqueue_script
+				'includes/theme-js.php',                        // Load JavaScript via wp_enqueue_script
 				'includes/sidebar-init.php', 			// Initialize widgetized areas
 				'includes/theme-widgets.php',			// Theme widgets
 				);

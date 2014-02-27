@@ -20,12 +20,22 @@ jQuery(document).ready(function(){
 	});
 
 	// Show/hide the main navigation
-  	jQuery('.nav-toggle').click(function() {
-	  jQuery('#navigation').slideToggle('fast', function() {
-	  	return false;
+  	//jQuery('.nav-toggle').click(function() {
+	  //jQuery('#navigation').slideToggle('fast', function() {
+	  //	return false;
 	    // Animation complete.
-	  });
-	});
+	  //});
+	//});
+        
+        //RESMENU
+        jQuery('.toresponsive').ReSmenu({
+            menuClass:    'responsive_menu',   // Responsive menu class
+            selectId:     'resmenu',          // select ID
+            textBefore:   '&Congruent;',               // Text to add before the mobile menu
+            selectOption: false,               // First select option
+            activeClass:  'current-menu-item', // Active menu li class
+            maxWidth:     767                  // Size to which the menu is responsive
+        });
 
 	// Stop the navigation link moving to the anchor (Still need the anchor for semantic markup)
 	jQuery('.nav-toggle a').click(function(e) {

@@ -45,7 +45,7 @@
 
 	<header id="header">
 	
-		<div class="col-full">
+		<div class="col-full center_me">
 		
 		<?php
 		    $logo = get_template_directory_uri() . '/images/logo.png';
@@ -77,11 +77,11 @@
 			<?php } ?>
 		</div><!-- /#topad -->
         <?php } ?>
-        
-		<nav id="navigation" role="navigation">
+                
+		<nav id="navigation" class="menu_container" role="navigation">
 			<?php
 			if ( function_exists( 'has_nav_menu' ) && has_nav_menu( 'primary-menu' ) ) {
-				wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'main-nav', 'menu_class' => 'nav fl', 'theme_location' => 'primary-menu' ) );
+				wp_nav_menu( array( 'depth' => 6, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'main-nav', 'menu_class' => 'nav fl toresponsive', 'theme_location' => 'primary-menu' ) );
 			} else {
 			?>
     	    <ul id="main-nav" class="nav fl">
@@ -90,8 +90,9 @@
 				<?php wp_list_pages( 'sort_column=menu_order&depth=6&title_li=&exclude=' ); ?>
 			</ul><!-- /#nav -->
     	    <?php } ?>
-		
+                        
 		</nav><!-- /#navigation -->
+                
 		
 		<?php if ( is_woocommerce_activated() ) { whitelight_woocommerce_cart(); } ?>
 		

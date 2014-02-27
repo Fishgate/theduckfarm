@@ -23,3 +23,21 @@ strong {
     padding-top: 0 !important;
     width: 100%;
 }
+.responsive_menu label{
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    color: #DC862A;
+}
+.responsive_menu{
+    margin: 0 auto;
+}
+#resmenu1{
+    padding: 5px;
+    width: 50%;
+    background: #999;
+}
+.center_me{
+    text-align: center;
+}

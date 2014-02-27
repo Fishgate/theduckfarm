@@ -10,6 +10,8 @@ if ( ! function_exists( 'woothemes_add_javascript' ) ) {
 		wp_register_script( 'portfolio', get_template_directory_uri() . '/includes/js/portfolio.js', array( 'jquery', 'prettyPhoto' ) );
 		wp_register_script( 'flexslider', get_template_directory_uri() . '/includes/js/jquery.flexslider.min.js', array( 'jquery' ) );
 		wp_register_script( 'enable-lightbox', get_template_directory_uri() . '/includes/js/enable-lightbox.js', array( 'jquery', 'prettyPhoto' ) );
+		wp_register_script( 'resmenu', get_template_directory_uri() . '/includes/js/jquery.resmenu.min.js', array( 'jquery' ) );
+
 		// Feedback Scripts
 		wp_register_script( 'slides', get_template_directory_uri() . '/includes/js/slides.min.jquery.js', array( 'jquery' ) );
 		wp_register_script( 'woo-feedback', get_template_directory_uri() . '/includes/js/feedback.js', array( 'jquery', 'slides' ) );
@@ -24,6 +26,7 @@ if ( ! function_exists( 'woothemes_add_javascript' ) ) {
 
 		wp_enqueue_script( 'third-party', get_template_directory_uri() . '/includes/js/third-party.js', array( 'jquery' ) );
 		wp_enqueue_script( 'general', get_template_directory_uri() . '/includes/js/general.js', array( 'jquery', 'third-party' ) );
+                wp_enqueue_script( 'resmenu', get_template_directory_uri() . '/includes/js/jquery.resmenu.min.js', array( 'jquery', 'third-party' ) );
 		
 		// Conditionally load the Feedback JavaScript, where needed.
 		$load_feedback_js = false;
