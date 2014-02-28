@@ -44,3 +44,6 @@ strong {
 .center_me{
     text-align: center;
 }
+#navigation{
+    margin: 25px 0 7px;
+}

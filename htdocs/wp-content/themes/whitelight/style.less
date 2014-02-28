@@ -257,7 +257,7 @@ mark {
 @media only screen and (max-width: 767px)  {
 	/* iPhone landscape & down */
 	#navigation  {
-		margin: 1em -10px;
+		margin: 0 0 2em!important;
                 display: block;
 		.nav  {
 			float: none;
@@ -290,7 +290,7 @@ mark {
 
 /* 2.2 Header */
 #header {
-	padding: 3em 0;
+	padding: 3em 0 0 0;
 	clear: both;
 	position: relative;
 	z-index: 999;
@@ -337,7 +337,7 @@ mark {
 	width:100%;
 	margin: 0 auto;
 	padding: 0;
-	min-height: 150px;
+	/*min-height: 150px;*/
 	.inset_box_shadow(0, 0, 10px, 0, #111);
 	.slides > li { position: relative; }
 	.slides  { /* Hide the slides before the JS is loaded. Avoids image jumping */
@@ -465,7 +465,8 @@ mark {
 		}
 		.flex-control-nav  {
 		    top: auto;
-		    bottom: 100px;
+                    /*outline: 1px solid red;*/
+		    bottom: 10px;
 		    right: 20px;
 		}
 
@@ -476,6 +477,7 @@ mark {
 		    width: 100%;
 		    .flex-prev, .flex-next  {
 		    	position: absolute;
+                        top: 40%;
 		    	.border_radius(100px);
 		    	overflow: visible;
 		    	text-indent: -9999px;

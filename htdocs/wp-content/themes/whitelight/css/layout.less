@@ -32,7 +32,7 @@ INDEX
 /*----------------------*/
 
 /* Adding padding to left & right of content columns */
-#top, #header, #content, #intro, #footer-widgets, #footer  { padding: 20px 0; }
+#top, #header, #content, #intro, #footer-widgets, #footer  {}
 
 /* Adjust header elements positioning between 768px & 920px */
 @media only screen and (min-width: 768px) and (max-width: 920px) {
@@ -45,7 +45,7 @@ INDEX
 @media only screen and (min-width: 1024px) {
 	.featured-wrap .controls-container  {
 		ul.flex-direction-nav  {
-			top: 44%;
+			bottom: 10px;
 			.flex-prev  {
 				left: -24px;
 			}
@@ -59,6 +59,8 @@ INDEX
 @media only screen and (min-width: 940px) {
 	#content .portfolio-item  { margin: 1em 0.9% 1em!important; }
 	.widget_woo_subscribe #connect .newsletter-form .email  { width: 55%; }
+
+
 }
 
 /* Only apply to iPad portrait and up */
@@ -151,7 +153,9 @@ INDEX
 		margin-top: 10px;
 		ul.rss  { margin-left: 10px; }
 		.nav li {
-			a  { .border_radius(3px); }
+			a  { .border_radius(3px);
+                             font-size: 14px;
+                           }
 			&.parent {
 				> a {
 					position: relative;
@@ -282,7 +286,7 @@ INDEX
 			}
 		}
 		.controls-container  {
-		    .flex-control-nav  { bottom: 50px; right: 30px; }
+		    .flex-control-nav  { /*bottom: 50px; right: 30px;*/ }
 		    .flex-direction-nav  { top: 20px; bottom: auto; }
 		}
 	}
