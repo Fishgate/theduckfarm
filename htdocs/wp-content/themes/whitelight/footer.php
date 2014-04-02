@@ -42,7 +42,7 @@
 	
 		<div class="col-full">
 
-			<div id="copyright" class="col-left">
+			<div id="copyright" class="col-left centered-on-mobile">
 			<?php if( isset( $woo_options['woo_footer_left'] ) && $woo_options['woo_footer_left'] == 'true' ) {
 	
 					echo stripslashes( $woo_options['woo_footer_left_text'] );
