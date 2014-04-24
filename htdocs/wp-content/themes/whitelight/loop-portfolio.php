@@ -133,7 +133,8 @@ if ( have_posts() ) : $count = 0; ?>
 				    	<h1 class="fix">
 				    	
 <?php
-	if ( $screen_type == 'page' ) { ?><strong><?php the_title(); ?></strong><?php }
+/*<?php// the_title(); ?>*/
+	if ( $screen_type == 'page' ) { ?><strong>Products</strong><?php }
 	else if ( $screen_type == 'post-type-archive' ) { echo '<strong>' . apply_filters( 'woo_portfolio_type_archive_title', __( 'Portfolio', 'woothemes' ) ) . '</strong>'; }
 	else if ( $screen_type == 'taxonomy' ) { echo '<strong>' . $archive_title . '</strong>'; }
 

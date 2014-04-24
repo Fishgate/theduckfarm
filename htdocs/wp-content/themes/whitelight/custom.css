@@ -47,3 +47,23 @@ strong {
 #navigation{
     margin: 25px 0 7px;
 }
+
+/*=========== PORTFOLIO STYLES =====*/
+.portfolio h1{
+    font-size: 24px;
+}
+.portfolio h2{
+    font-size: 16px;
+}
+.entry table td{
+    padding: 15px;
+}
+.entry table, .entry table td{
+    border: none;
+}
+.entry table tr.alt-table-row{
+    background: none;
+}
+.entry table td:nth-child(n+2){
+    border-bottom: 1px solid #DC862A;
+}
